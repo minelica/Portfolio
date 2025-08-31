@@ -1,36 +1,25 @@
-<script setup lang="ts">
-const handleClick = () => {
-  alert('Button clicked!')
-}
-</script>
-
 <template>
-  <div class="placeholder">
-    <h2>Home Page</h2>
-    <p>This is a placeholder for the Home page content.</p>
-    <button @click="handleClick">Hello</button>
+  <div class="home-page">
+    <HomeHero />
+    <HomeFeatures />
+    <HomeHow />
+    <HomeLogoCloud />
+    <HomeCTA />
   </div>
 </template>
 
-<style scoped>
-button {
-  background-color: cyan;
-  color: black;
-  border: none;
-  cursor: pointer;
-  font-size: larger;
-  border-radius: 500px;
-}
+<script setup lang="ts">
+import HomeHero from '@/sections/home/HomeHero.vue'
+import HomeFeatures from '@/sections/home/HomeFeatures.vue'
+import HomeHow from '@/sections/home/HomeHow.vue'
+import HomeLogoCloud from '@/sections/home/HomeLogoCloud.vue'
+import HomeCTA from '@/sections/home/HomeCTA.vue'
+</script>
 
-.placeholder {
+<style scoped>
+.home-page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 60vh;
-  color: #888;
-  background: #f5f5f5;
-  border-radius: 8px;
-  padding: 2rem;
 }
 </style>
