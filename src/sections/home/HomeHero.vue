@@ -3,6 +3,7 @@ import Aurora from '@/components/bits/Aurora/Aurora.vue'
 import BlurText from '@/components/bits/BlurText/BlurText.vue'
 import ShinyText from '@/components/bits/ShinyText/ShinyText.vue'
 import ProfileCard from '@/components/bits/ProfileCard/ProfileCard.vue'
+import StarBorder from '@/components/bits/StarBorder/StarBorder.vue'
 
 import avatarUrl from '@/assets/images/avatarProfileCard.png'
 import iconUrl from '@/assets/logos/mLogo.png'
@@ -10,6 +11,7 @@ import iconUrl from '@/assets/logos/mLogo.png'
 const handleAnimationComplete = () => {
   console.log('All animations complete!')
 }
+
 const handleContactClick = () => {
   console.log('Contact button clicked!')
 }
@@ -27,7 +29,7 @@ const handleContactClick = () => {
   />
 
   <!-- Fullscreen-Hero mit Aurora als globalem Hintergrund -->
-  <section class="relative min-h-screen overflow-hidden">
+  <section class="relative overflow-hidden">
     <!-- Inhalt: zentrierter Container -->
     <div class="mx-auto max-w-6xl px-6 py-12 md:py-16">
       <!-- Zweispaltiges Layout (mobil 1 Spalte) -->
@@ -54,13 +56,15 @@ const handleContactClick = () => {
           />
 
           <div class="mt-6 flex flex-wrap gap-4 justify-center md:justify-start">
-            <a
+            <!--<a
               href="#projects"
               class="px-5 py-3 rounded-xl bg-white text-black"
               style="color: black !important"
               >Explore</a
-            >
-            <a href="#contact" class="px-5 py-3 rounded-xl border border-white">Contact</a>
+            >-->
+            <StarBorder as="button" color="Green" speed="6s" thickness="3"> Explore </StarBorder>
+            <StarBorder as="button" color="Green" speed="6s" thickness="3"> Contact </StarBorder>
+            <!--<a href="#contact" class="px-5 py-3 rounded-xl border border-white">Contact</a>-->
           </div>
         </div>
 
