@@ -29,7 +29,7 @@ const handleComplete = () => {
         class-name="hero-shiny"
       />
 
-      <div class="mt-2 mb-8 text-left text-sm md:text-base font-light text-white">
+      <div class="mt-2 mb-8 text-center text-sm md:text-base font-light text-white">
         I prioritize high-quality, responsive, and accessible development. My approach ensures your
         project meets modern web standards.
       </div>
@@ -74,7 +74,7 @@ const handleComplete = () => {
 }
 
 .feature-card {
-  border-left: 3px solid white;
+  border-left: 2px solid white;
   padding: 1.5rem 1.5rem 1.5rem 2rem;
   border-radius: 8px;
   background: rgba(0, 0, 0, 0.2);

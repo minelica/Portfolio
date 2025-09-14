@@ -5,6 +5,10 @@ body {
   overflow-x: hidden;
 }
 
+header {
+  margin-bottom: 20px;
+}
+
 h1,
 h2,
 h3,

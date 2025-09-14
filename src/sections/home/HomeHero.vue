@@ -3,7 +3,6 @@ import Aurora from '@/components/bits/Aurora/Aurora.vue'
 import BlurText from '@/components/bits/BlurText/BlurText.vue'
 import ShinyText from '@/components/bits/ShinyText/ShinyText.vue'
 import ProfileCard from '@/components/bits/ProfileCard/ProfileCard.vue'
-import StarBorder from '@/components/bits/StarBorder/StarBorder.vue'
 
 import avatarUrl from '@/assets/images/avatarProfileCard.png'
 import iconUrl from '@/assets/logos/mLogo.png'
@@ -34,10 +33,9 @@ const handleContactClick = () => {
     <div class="mx-auto max-w-6xl px-6 py-12 md:py-16">
       <!-- Zweispaltiges Layout (mobil 1 Spalte) -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        <!-- Linke Spalte: Shiny + Blur + Buttons -->
         <div class="text-white text-center md:text-left">
           <ShinyText
-            text="Empowering Solutions Through Innovative Software Development"
+            text="Exceptional Development for Modern Solutions"
             :disabled="false"
             :speed="3"
             class-name="hero-shiny"
@@ -56,15 +54,16 @@ const handleContactClick = () => {
           />
 
           <div class="mt-6 flex flex-wrap gap-4 justify-center md:justify-start">
-            <!--<a
+            <a
               href="#projects"
-              class="px-5 py-3 rounded-xl bg-white text-black"
+              class="px-5 py-3 rounded-xl bg-white tex∏t-black"
               style="color: black !important"
               >Explore</a
-            >-->
-            <StarBorder as="button" color="Green" speed="6s" thickness="3"> Explore </StarBorder>
-            <StarBorder as="button" color="Green" speed="6s" thickness="3"> Contact </StarBorder>
-            <!--<a href="#contact" class="px-5 py-3 rounded-xl border border-white">Contact</a>-->
+            >
+
+            <!--<StarBorder as="button" color="Green" speed="6s" thickness="3"> Explore </StarBorder>
+            <StarBorder as="button" color="Green" speed="6s" thickness="3"> Contact </StarBorder>-->
+            <a href="#contact" class="px-5 py-3 rounded-xl border border-white">Contact</a>
           </div>
         </div>
 
