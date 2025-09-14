@@ -5,7 +5,9 @@ import ShinyText from '@/components/bits/ShinyText/ShinyText.vue'
 
 <template>
   <!-- Grid-Overlay statt flex -->
-  <section class="relative grid min-h-[640px] w-full overflow-hidden isolate">
+  <section
+    class="relative grid grid-cols-1 grid-rows-1 min-h-[400px] md:min-h-[640px] w-full overflow-hidden isolate"
+  >
     <!-- Hintergrund-Layer -->
     <div class="[grid-area:1/1] z-0 pointer-events-auto">
       <GradientBlinds
@@ -24,10 +26,9 @@ import ShinyText from '@/components/bits/ShinyText/ShinyText.vue'
         mix-blend-mode="screen"
       />
     </div>
-
     <!-- Vordergrund-Layer -->
     <div
-      class="[grid-area:1/1] z-10 mx-auto w-full max-w-6xl px-6 py-12 md:py-16 mt-20 pointer-events-none"
+      class="[grid-area:1/1] z-10 mx-auto w-full max-w-6xl px-6 py-12 md:py-16 mt-8 md:mt-20 pointer-events-none"
     >
       <div class="text-center text-white">
         <ShinyText
@@ -41,18 +42,17 @@ import ShinyText from '@/components/bits/ShinyText/ShinyText.vue'
           maintainable code that meets modern web standards.
         </p>
       </div>
-
       <!-- Nur echte Interaktion wieder zulassen -->
       <div class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
-        <article class="feature-card pointer-events-auto">
+        <article class="feature-card pointer-events-none">
           <h3>Modern Web Standards</h3>
           <p>Semantic HTML, ARIA, and performance-first practices ensure quality and longevity.</p>
         </article>
-        <article class="feature-card pointer-events-auto">
+        <article class="feature-card pointer-events-none">
           <h3>Vue 3 + Composition API</h3>
           <p>Scalable architecture with reusable composables and clear state management.</p>
         </article>
-        <article class="feature-card pointer-events-auto">
+        <article class="feature-card pointer-events-none">
           <h3>TypeScript Safety</h3>
           <p>Strong typing, better DX, and fewer runtime bugs with robust tooling.</p>
         </article>

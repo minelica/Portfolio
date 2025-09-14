@@ -3,7 +3,6 @@ import Aurora from '@/components/bits/Aurora/Aurora.vue'
 import BlurText from '@/components/bits/BlurText/BlurText.vue'
 import ShinyText from '@/components/bits/ShinyText/ShinyText.vue'
 import ProfileCard from '@/components/bits/ProfileCard/ProfileCard.vue'
-
 import avatarUrl from '@/assets/images/avatarProfileCard.png'
 import iconUrl from '@/assets/logos/mLogo.png'
 
