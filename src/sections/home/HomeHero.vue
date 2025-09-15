@@ -19,7 +19,7 @@ const handleContactClick = () => {
   <!-- Aurora: absolut über die volle Fläche, hinter allem -->
   <Aurora
     class="absolute inset-0 -z-10"
-    :color-stops="['#171D22', '#7cff67', '#171D22']"
+    :color-stops="['#0f172a', '#22c55e', '#8b5cf6', '#3b82f6']"
     :amplitude="1.0"
     :blend="0.5"
     :speed="1.0"
@@ -48,7 +48,7 @@ const handleContactClick = () => {
             direction="top"
             :threshold="0.1"
             root-margin="0px"
-            :step-duration="0.35"
+            :step-duration="0.3"
             @animation-complete="handleAnimationComplete"
           />
 

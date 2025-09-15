@@ -19,9 +19,9 @@ import logo from '@/assets/logos/mLogo.png'
       activeHref="/"
       class="custom-nav"
       ease="power2.easeOut"
-      baseColor="#ffffff"
-      pillColor="#000000"
-      hoveredPillTextColor="#000000"
+      baseColor="#1e293b"
+      pillColor="#1e293b"
+      hoveredPillTextColor="#22c55e"
       pillTextColor="#ffffff"
     />
   </nav>
@@ -32,5 +32,6 @@ import logo from '@/assets/logos/mLogo.png'
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 </style>
