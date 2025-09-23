@@ -22,7 +22,7 @@ import logo from '@/assets/logos/mLogo.png'
       baseColor="#1e293b"
       pillColor="#1e293b"
       hoveredPillTextColor="#22c55e"
-      pillTextColor="#ffffff"
+      pillTextColor="#1e293b"
     />
   </nav>
 </template>

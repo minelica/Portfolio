@@ -4,9 +4,9 @@
     <HomeFeatures />
     <HomeHow />
     <HomeLogoCloud />
-    <HomeCTA />
   </div>
 
+  <!--
   <SplashCursor
     :SIM_RESOLUTION="128"
     :DYE_RESOLUTION="1440"
@@ -23,6 +23,7 @@
     :BACK_COLOR="{ r: 0.5, g: 0, b: 0 }"
     :TRANSPARENT="true"
   />
+  -->
 </template>
 
 <script setup lang="ts">
@@ -30,8 +31,7 @@ import HomeHero from '@/sections/home/HomeHero.vue'
 import HomeFeatures from '@/sections/home/HomeFeatures.vue'
 import HomeHow from '@/sections/home/HomeHow.vue'
 import HomeLogoCloud from '@/sections/home/HomeLogoCloud.vue'
-import HomeCTA from '@/sections/home/HomeCTA.vue'
-import SplashCursor from '@/components/bits/SplashCursor/SplashCursor.vue'
+// import SplashCursor from '@/components/bits/SplashCursor/SplashCursor.vue'
 </script>
 
 <style scoped>
