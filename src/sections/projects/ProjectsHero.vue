@@ -22,7 +22,7 @@ const projects = [
     description:
       'A modern and responsive developer portfolio created with Vue 3 — featuring custom UI animations, smooth transitions, and minimal design.',
     tech: ['Vue 3', 'GSAP', 'TailwindCSS', 'TypeScript'],
-    link: '',
+    link: 'https://portfolio-minela.vercel.app/',
     image: portfolioImg,
     status: 'Live',
   },
