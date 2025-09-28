@@ -1,7 +1,20 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import TimelineHero from '@/sections/timeline/TimelineHero.vue'
+</script>
 
 <template>
-  <h1>In progress...</h1>
+  <div class="home-page">
+    <TimelineHero />
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: -20px;
+}
+</style>
