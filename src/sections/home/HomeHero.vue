@@ -52,17 +52,10 @@ const handleContactClick = () => {
             @animation-complete="handleAnimationComplete"
           />
 
-          <div class="mt-6 flex flex-wrap gap-4 justify-center md:justify-start">
-            <a
-              href="#projects"
-              class="px-5 py-3 rounded-xl bg-white tex∏t-black"
-              style="color: black !important"
-              >Explore</a
-            >
+          <div class="mt-8 flex flex-wrap gap-6 justify-center md:justify-start text-white/90">
+            <a href="/projects" class="contact-link" aria-label="Explore Projects"> 🚀 Explore </a>
 
-            <!--<StarBorder as="button" color="Green" speed="6s" thickness="3"> Explore </StarBorder>
-            <StarBorder as="button" color="Green" speed="6s" thickness="3"> Contact </StarBorder>-->
-            <a href="#contact" class="px-5 py-3 rounded-xl border border-white">Contact</a>
+            <a href="/contact" class="contact-link" aria-label="Contact Me"> 💬 Contact </a>
           </div>
         </div>
 
@@ -98,5 +91,26 @@ const handleContactClick = () => {
   font-size: clamp(0.95rem, 1.8vw, 1.125rem);
   max-width: 42rem;
   margin-top: 1rem;
+}
+
+.contact-link {
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #e2e8f0;
+}
+
+.contact-link:hover {
+  background: rgba(59, 130, 246, 0.2);
+  border-color: rgba(59, 130, 246, 0.4);
+  color: #bfdbfe;
+  transform: translateY(-3px);
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.3);
 }
 </style>
