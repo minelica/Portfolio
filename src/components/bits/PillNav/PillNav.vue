@@ -276,6 +276,12 @@ const setCircleRef = (el: HTMLSpanElement | null, index: number) => {
     circleRefs.value[index] = el
   }
 }
+
+const handleMobileItemClick = () => {
+  if (isMobileMenuOpen.value) {
+    toggleMobileMenu() // Menü sofort schließen
+  }
+}
 </script>
 
 <template>
@@ -339,6 +345,7 @@ const setCircleRef = (el: HTMLSpanElement | null, index: number) => {
               :aria-label="item.ariaLabel || item.label"
               @mouseenter="handleEnter(i)"
               @mouseleave="handleLeave(i)"
+              @click="handleMobileItemClick"
             >
               <span
                 class="block bottom-0 left-1/2 z-[1] absolute rounded-full pointer-events-none hover-circle"
@@ -387,16 +394,16 @@ const setCircleRef = (el: HTMLSpanElement | null, index: number) => {
         :style="{
           width: 'var(--nav-h)',
           height: 'var(--nav-h)',
-          background: 'var(--base, #000)',
+          background: '#1e293b', // 🔵 Hintergrund Blau
         }"
       >
         <span
-          class="rounded w-4 h-0.5 origin-center transition-all duration-[10ms] ease-[cubic-bezier(0.25,0.1,0.25,1)] hamburger-line"
-          :style="{ background: 'var(--pill-bg, #fff)' }"
+          class="rounded w-4 h-0.5 origin-center transition-all duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)] hamburger-line"
+          style="background: #ffffff"
         />
         <span
-          class="rounded w-4 h-0.5 origin-center transition-all duration-[10ms] ease-[cubic-bezier(0.25,0.1,0.25,1)] hamburger-line"
-          :style="{ background: 'var(--pill-bg, #fff)' }"
+          class="rounded w-4 h-0.5 origin-center transition-all duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)] hamburger-line"
+          style="background: #ffffff"
         />
       </button>
     </nav>

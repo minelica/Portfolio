@@ -21,8 +21,8 @@ import logo from '@/assets/logos/mLogo.png'
       ease="power2.easeOut"
       baseColor="#1e293b"
       pillColor="#1e293b"
+      pillTextColor="#ffffff"
       hoveredPillTextColor="#22c55e"
-      pillTextColor="#1e293b"
     />
   </nav>
 </template>

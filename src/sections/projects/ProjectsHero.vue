@@ -33,7 +33,7 @@ const projects = [
     tech: ['Rust', 'x86', 'Low-Level Systems'],
     link: '',
     image: 'https://www.rust-lang.org/static/images/rust-logo-blk.svg',
-    status: 'In Developmen',
+    status: 'In Development',
   },
 ]
 </script>
