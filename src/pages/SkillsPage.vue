@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import SkillsHero from '@/sections/skills/SkillsHero.vue'
-// import SkillsCards from '@/sections/skills/SkillsCards.vue'
 </script>
 
 <template>
   <div class="home-page">
     <SkillsHero />
-    <!-- <SkillsCards /> -->
   </div>
 </template>
 

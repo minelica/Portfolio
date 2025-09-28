@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import LightRays from '@/components/bits/LightRays/LightRays.vue'
+import DarkVeil from '@/components/bits/DarkVeil/DarkVeil.vue'
 import ShinyText from '@/components/bits/ShinyText/ShinyText.vue'
 import BlurText from '@/components/bits/BlurText/BlurText.vue'
 import Folder from '@/components/bits/Folder/Folder.vue'
@@ -22,24 +22,18 @@ const handleAnimationComplete = () => {
 
 <template>
   <!-- isolate = eigener Stacking-Context, damit -z-10 zuverlässig "hinten" ist -->
-  <div class="relative isolate w-full min-h-[800px] overflow-hidden bg-transparent">
-    <!-- Hintergrund-Layer (blockiert keine Interaktionen) -->
-    <div aria-hidden="true" class="pointer-events-none absolute inset-0 -z-10">
-      <LightRays
-        rays-origin="top-center"
-        rays-color="#1e293b"
-        :rays-speed="2.0"
-        :light-spread="2.0"
-        :ray-length="3.5"
-        :follow-mouse="true"
-        :mouse-influence="0.1"
-        :noise-amount="0.1"
-        :distortion="0.05"
-        :fade-distance="2.0"
-        class="h-full w-full"
-      />
-      <div class="absolute inset-0 bg-black/30"></div>
-    </div>
+  <div class="relative isolate w-full min-h-screen overflow-hidden bg-transparent">
+    <!-- Hintergrund -->
+    <DarkVeil
+      class="absolute inset-0 -z-10"
+      :hue-shift="32"
+      :noise-intensity="0.15"
+      :scanline-intensity="0.0"
+      :speed="1.6"
+      :scanline-frequency="1"
+      :warp-amount="0.1"
+      :resolution-scale="1"
+    />
 
     <!-- Fullscreen-Hero mit LightRays als globalem Hintergrund -->
     <section class="relative z-10">
@@ -71,7 +65,7 @@ const handleAnimationComplete = () => {
           </div>
           <!-- Rechte Spalte: Folder vertikal und horizontal zentriert -->
           <div class="flex justify-end items-center h-full mr-5">
-            <Folder :items="items" :size="1.5" color="#1e293b" class="folder">
+            <Folder :items="items" :size="1.5" color="#315ec1" class="folder">
               <template #item-1="{ item }">
                 <div class="flex justify-start w-full">
                   <span style="color: black; width: 100%">{{ item }}</span>
